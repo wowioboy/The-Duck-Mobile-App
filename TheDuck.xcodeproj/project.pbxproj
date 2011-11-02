@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB0420A71461BA44000740DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0420A61461BA44000740DE /* UIKit.framework */; };
+		DB0420A91461BA44000740DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0420A81461BA44000740DE /* Foundation.framework */; };
+		DB0420AB1461BA44000740DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0420AA1461BA44000740DE /* CoreGraphics.framework */; };
+		DB0420AD1461BA44000740DE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0420AC1461BA44000740DE /* CoreData.framework */; };
+		DB0420B31461BA44000740DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB0420B11461BA44000740DE /* InfoPlist.strings */; };
+		DB0420B51461BA44000740DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0420B41461BA44000740DE /* main.m */; };
+		DB0420B91461BA44000740DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0420B81461BA44000740DE /* AppDelegate.m */; };
+		DB0420BC1461BA44000740DE /* TheDuck.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DB0420BA1461BA44000740DE /* TheDuck.xcdatamodeld */; };
+		DB0420C41461BA44000740DE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0420C31461BA44000740DE /* SenTestingKit.framework */; };
+		DB0420C51461BA44000740DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0420A61461BA44000740DE /* UIKit.framework */; };
+		DB0420C61461BA44000740DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0420A81461BA44000740DE /* Foundation.framework */; };
+		DB0420C71461BA44000740DE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0420AC1461BA44000740DE /* CoreData.framework */; };
+		DB0420CF1461BA44000740DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB0420CD1461BA44000740DE /* InfoPlist.strings */; };
+		DB0420D21461BA44000740DE /* TheDuckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0420D11461BA44000740DE /* TheDuckTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB0420C81461BA44000740DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB0420991461BA44000740DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB0420A11461BA44000740DE;
+			remoteInfo = TheDuck;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB0420A21461BA44000740DE /* TheDuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheDuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0420A61461BA44000740DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DB0420A81461BA44000740DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB0420AA1461BA44000740DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB0420AC1461BA44000740DE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DB0420B01461BA44000740DE /* TheDuck-Info.plist */ = {isa = PBXFileReference; path = "TheDuck-Info.plist"; sourceTree = "<group>"; };
+		DB0420B21461BA44000740DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB0420B41461BA44000740DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB0420B61461BA44000740DE /* TheDuck-Prefix.pch */ = {isa = PBXFileReference; path = "TheDuck-Prefix.pch"; sourceTree = "<group>"; };
+		DB0420B71461BA44000740DE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB0420B81461BA44000740DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB0420BB1461BA44000740DE /* TheDuck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheDuck.xcdatamodel; sourceTree = "<group>"; };
+		DB0420C21461BA44000740DE /* TheDuckTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheDuckTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0420C31461BA44000740DE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DB0420CC1461BA44000740DE /* TheDuckTests-Info.plist */ = {isa = PBXFileReference; path = "TheDuckTests-Info.plist"; sourceTree = "<group>"; };
+		DB0420CE1461BA44000740DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB0420D01461BA44000740DE /* TheDuckTests.h */ = {isa = PBXFileReference; path = TheDuckTests.h; sourceTree = "<group>"; };
+		DB0420D11461BA44000740DE /* TheDuckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheDuckTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB04209F1461BA44000740DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0420A71461BA44000740DE /* UIKit.framework in Frameworks */,
+				DB0420A91461BA44000740DE /* Foundation.framework in Frameworks */,
+				DB0420AB1461BA44000740DE /* CoreGraphics.framework in Frameworks */,
+				DB0420AD1461BA44000740DE /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0420BE1461BA44000740DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0420C41461BA44000740DE /* SenTestingKit.framework in Frameworks */,
+				DB0420C51461BA44000740DE /* UIKit.framework in Frameworks */,
+				DB0420C61461BA44000740DE /* Foundation.framework in Frameworks */,
+				DB0420C71461BA44000740DE /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB0420971461BA44000740DE = {
+			isa = PBXGroup;
+			children = (
+				DB0420AE1461BA44000740DE /* TheDuck */,
+				DB0420CA1461BA44000740DE /* TheDuckTests */,
+				DB0420A51461BA44000740DE /* Frameworks */,
+				DB0420A31461BA44000740DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB0420A31461BA44000740DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB0420A21461BA44000740DE /* TheDuck.app */,
+				DB0420C21461BA44000740DE /* TheDuckTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB0420A51461BA44000740DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB0420A61461BA44000740DE /* UIKit.framework */,
+				DB0420A81461BA44000740DE /* Foundation.framework */,
+				DB0420AA1461BA44000740DE /* CoreGraphics.framework */,
+				DB0420AC1461BA44000740DE /* CoreData.framework */,
+				DB0420C31461BA44000740DE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB0420AE1461BA44000740DE /* TheDuck */ = {
+			isa = PBXGroup;
+			children = (
+				DB0420B71461BA44000740DE /* AppDelegate.h */,
+				DB0420B81461BA44000740DE /* AppDelegate.m */,
+				DB0420BA1461BA44000740DE /* TheDuck.xcdatamodeld */,
+				DB0420AF1461BA44000740DE /* Supporting Files */,
+			);
+			path = TheDuck;
+			sourceTree = "<group>";
+		};
+		DB0420AF1461BA44000740DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB0420B01461BA44000740DE /* TheDuck-Info.plist */,
+				DB0420B11461BA44000740DE /* InfoPlist.strings */,
+				DB0420B41461BA44000740DE /* main.m */,
+				DB0420B61461BA44000740DE /* TheDuck-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB0420CA1461BA44000740DE /* TheDuckTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB0420D01461BA44000740DE /* TheDuckTests.h */,
+				DB0420D11461BA44000740DE /* TheDuckTests.m */,
+				DB0420CB1461BA44000740DE /* Supporting Files */,
+			);
+			path = TheDuckTests;
+			sourceTree = "<group>";
+		};
+		DB0420CB1461BA44000740DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB0420CC1461BA44000740DE /* TheDuckTests-Info.plist */,
+				DB0420CD1461BA44000740DE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB0420A11461BA44000740DE /* TheDuck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0420D51461BA44000740DE /* Build configuration list for PBXNativeTarget "TheDuck" */;
+			buildPhases = (
+				DB04209E1461BA44000740DE /* Sources */,
+				DB04209F1461BA44000740DE /* Frameworks */,
+				DB0420A01461BA44000740DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheDuck;
+			productName = TheDuck;
+			productReference = DB0420A21461BA44000740DE /* TheDuck.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB0420C11461BA44000740DE /* TheDuckTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0420D81461BA44000740DE /* Build configuration list for PBXNativeTarget "TheDuckTests" */;
+			buildPhases = (
+				DB0420BD1461BA44000740DE /* Sources */,
+				DB0420BE1461BA44000740DE /* Frameworks */,
+				DB0420BF1461BA44000740DE /* Resources */,
+				DB0420C01461BA44000740DE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB0420C91461BA44000740DE /* PBXTargetDependency */,
+			);
+			name = TheDuckTests;
+			productName = TheDuckTests;
+			productReference = DB0420C21461BA44000740DE /* TheDuckTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB0420991461BA44000740DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Alliance Acquisitions, Inc.";
+			};
+			buildConfigurationList = DB04209C1461BA44000740DE /* Build configuration list for PBXProject "TheDuck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB0420971461BA44000740DE;
+			productRefGroup = DB0420A31461BA44000740DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB0420A11461BA44000740DE /* TheDuck */,
+				DB0420C11461BA44000740DE /* TheDuckTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB0420A01461BA44000740DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0420B31461BA44000740DE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0420BF1461BA44000740DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0420CF1461BA44000740DE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DB0420C01461BA44000740DE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB04209E1461BA44000740DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0420B51461BA44000740DE /* main.m in Sources */,
+				DB0420B91461BA44000740DE /* AppDelegate.m in Sources */,
+				DB0420BC1461BA44000740DE /* TheDuck.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0420BD1461BA44000740DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0420D21461BA44000740DE /* TheDuckTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB0420C91461BA44000740DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB0420A11461BA44000740DE /* TheDuck */;
+			targetProxy = DB0420C81461BA44000740DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB0420B11461BA44000740DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB0420B21461BA44000740DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DB0420CD1461BA44000740DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB0420CE1461BA44000740DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB0420D31461BA44000740DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB0420D41461BA44000740DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB0420D61461BA44000740DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheDuck/TheDuck-Prefix.pch";
+				INFOPLIST_FILE = "TheDuck/TheDuck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DB0420D71461BA44000740DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheDuck/TheDuck-Prefix.pch";
+				INFOPLIST_FILE = "TheDuck/TheDuck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DB0420D91461BA44000740DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TheDuck.app/TheDuck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheDuck/TheDuck-Prefix.pch";
+				INFOPLIST_FILE = "TheDuckTests/TheDuckTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DB0420DA1461BA44000740DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TheDuck.app/TheDuck";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheDuck/TheDuck-Prefix.pch";
+				INFOPLIST_FILE = "TheDuckTests/TheDuckTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB04209C1461BA44000740DE /* Build configuration list for PBXProject "TheDuck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0420D31461BA44000740DE /* Debug */,
+				DB0420D41461BA44000740DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB0420D51461BA44000740DE /* Build configuration list for PBXNativeTarget "TheDuck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0420D61461BA44000740DE /* Debug */,
+				DB0420D71461BA44000740DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB0420D81461BA44000740DE /* Build configuration list for PBXNativeTarget "TheDuckTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0420D91461BA44000740DE /* Debug */,
+				DB0420DA1461BA44000740DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DB0420BA1461BA44000740DE /* TheDuck.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DB0420BB1461BA44000740DE /* TheDuck.xcdatamodel */,
+			);
+			currentVersion = DB0420BB1461BA44000740DE /* TheDuck.xcdatamodel */;
+			path = TheDuck.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DB0420991461BA44000740DE /* Project object */;
+}
