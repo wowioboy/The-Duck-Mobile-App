@@ -7,20 +7,54 @@
 //
 
 #import "AppDelegate.h"
-
 #import "ViewController.h"
+#import "Reachability.h"
+//#import "ASINetworkQueue.h"
+//#import "ASIHTTPRequest.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 @synthesize viewController = _viewController;
+@synthesize navController;
+@synthesize hostStatus, internetStatus, wifiStatus;
+
++ (AppDelegate *)sharedAppDelegate
+{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+	// Observe the kNetworkReachabilityChangedNotification. When that notification is posted, the
+    // method "reachabilityChanged" will be called. 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+	
+    // check what type of internet connection we have
+	hostReach = [Reachability reachabilityWithHostName:homeURL];
+	[hostReach startNotifier];
+	
+    internetReach = [Reachability reachabilityForInternetConnection];
+	[internetReach startNotifier];
+	
+    wifiReach = [Reachability reachabilityForLocalWiFi];
+	[wifiReach startNotifier];
+	
+	// update network reachability
+	[self updateReachabilityStatus];
+    
+    
+    // stuff everything onto the main stage
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    
+   	navController = [[UINavigationController alloc] init];
+    navController.navigationBarHidden = YES;
+	[navController.view setAutoresizesSubviews:YES];
+    [navController pushViewController:self.viewController animated:NO];
+    self.window.rootViewController = self.navController;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -62,6 +96,47 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+
+
+#pragma mark -
+#pragma mark Reachability Methods
+
+- (void)updateReachabilityStatus
+{
+	hostStatus = [hostReach currentReachabilityStatus];
+	wifiStatus = [wifiReach currentReachabilityStatus];
+	internetStatus = [internetReach currentReachabilityStatus];
+	
+	if (hostStatus == NotReachable && internetStatus == NotReachable && wifiStatus == NotReachable) {
+		
+		// alert the user that there is no internet connectivity
+		NSString *errorString = @"There is Currently NO Internet Connectivity.\nYou will be unable to play iMogul effectively\nuntil connectivity has been restored.";
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" 
+														message:errorString
+													   delegate:nil 
+											  cancelButtonTitle:@"OK" 
+											  otherButtonTitles: nil];
+		[alert show];
+		
+	}
+}
+
+// Called by Reachability whenever status changes.
+- (void)reachabilityChanged:(NSNotification* )note
+{
+	Reachability* curReach = [note object];
+	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
+	
+	if(curReach == hostReach)
+		hostStatus = [curReach currentReachabilityStatus];
+	else if (curReach == wifiReach)
+		wifiStatus = [curReach currentReachabilityStatus];
+	else if (curReach == internetReach)
+		internetStatus = [curReach currentReachabilityStatus];
+	
+	[self updateReachabilityStatus];
 }
 
 @end

@@ -15,22 +15,117 @@
 		DB04215414621181000740DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB04215314621181000740DE /* AppDelegate.m */; };
 		DB04215714621181000740DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB04215614621181000740DE /* ViewController.m */; };
 		DB04215A14621181000740DE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB04215814621181000740DE /* ViewController.xib */; };
+		DB04217714621262000740DE /* avatar-generic-duck.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04216614621262000740DE /* avatar-generic-duck.png */; };
+		DB04217814621262000740DE /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB04216714621262000740DE /* background.jpg */; };
+		DB04217914621262000740DE /* badge-quackcast.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04216814621262000740DE /* badge-quackcast.png */; };
+		DB04217A14621262000740DE /* badge-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04216914621262000740DE /* badge-twitter.png */; };
+		DB04217B14621262000740DE /* bluesearchbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04216A14621262000740DE /* bluesearchbutton.png */; };
+		DB04217C14621262000740DE /* DD-temp-podcast-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04216B14621262000740DE /* DD-temp-podcast-badge.png */; };
+		DB04217D14621262000740DE /* drunk_duck_on_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04216C14621262000740DE /* drunk_duck_on_twitter.png */; };
+		DB04217E14621262000740DE /* drunkduck_favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04216D14621262000740DE /* drunkduck_favicon.png */; };
+		DB04217F14621262000740DE /* drunkducklogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04216E14621262000740DE /* drunkducklogo.png */; };
+		DB04218014621262000740DE /* egg-logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04216F14621262000740DE /* egg-logo-small.png */; };
+		DB04218114621262000740DE /* egg-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217014621262000740DE /* egg-logo.png */; };
+		DB04218214621262000740DE /* quackcast-logo-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217114621262000740DE /* quackcast-logo-sm.png */; };
+		DB04218314621262000740DE /* quackcast-pagebadge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217214621262000740DE /* quackcast-pagebadge.png */; };
+		DB04218414621262000740DE /* quackcast.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217314621262000740DE /* quackcast.png */; };
+		DB04218514621262000740DE /* rss-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217414621262000740DE /* rss-badge.png */; };
+		DB04218614621262000740DE /* theduck_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217514621262000740DE /* theduck_57x57.png */; };
+		DB04218714621262000740DE /* twitter-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217614621262000740DE /* twitter-badge.png */; };
+		DB73CA8D14624D3400FF339F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DB73CA8C14624D3400FF339F /* Reachability.m */; };
+		DB9AAC0214621B7600EE84F1 /* ListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AAC0014621B7600EE84F1 /* ListController.m */; };
+		DB9AAC0314621B7600EE84F1 /* ListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9AAC0114621B7600EE84F1 /* ListController.xib */; };
+		DB9AAC091462224C00EE84F1 /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AAC071462224C00EE84F1 /* DetailController.m */; };
+		DB9AAC0A1462224C00EE84F1 /* DetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9AAC081462224C00EE84F1 /* DetailController.xib */; };
+		DB9AAC491462292300EE84F1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AAC481462292300EE84F1 /* CFNetwork.framework */; };
+		DB9AAC4D1462296600EE84F1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AAC4A1462296600EE84F1 /* libz.dylib */; };
+		DB9AAC4E1462296600EE84F1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AAC4B1462296600EE84F1 /* MobileCoreServices.framework */; };
+		DB9AAC4F1462296600EE84F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AAC4C1462296600EE84F1 /* SystemConfiguration.framework */; };
+		DBA825C7146229CF00AA6DBB /* libsbjson-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AAC451462249900EE84F1 /* libsbjson-ios.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB9AAC401462249900EE84F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC12323D1391D5CC00131607;
+			remoteInfo = SBJson;
+		};
+		DB9AAC421462249900EE84F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC1232521391D5CC00131607;
+			remoteInfo = SBJsonTests;
+		};
+		DB9AAC441462249900EE84F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2626913920FC7003D9994;
+			remoteInfo = "sbjson-ios";
+		};
+		DB9AAC461462249900EE84F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2627313920FC7003D9994;
+			remoteInfo = "sbjson-iosTests";
+		};
+		DBA825C5146229C200AA6DBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC2626813920FC7003D9994;
+			remoteInfo = "sbjson-ios";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DB04213F14621181000740DE /* TheDuckWebcomics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheDuckWebcomics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB04214314621181000740DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DB04214514621181000740DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB04214714621181000740DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DB04214B14621181000740DE /* TheDuckWebcomics-Info.plist */ = {isa = PBXFileReference; path = "TheDuckWebcomics-Info.plist"; sourceTree = "<group>"; };
+		DB04214B14621181000740DE /* TheDuckWebcomics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheDuckWebcomics-Info.plist"; sourceTree = "<group>"; };
 		DB04214D14621181000740DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB04214F14621181000740DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DB04215114621181000740DE /* TheDuckWebcomics-Prefix.pch */ = {isa = PBXFileReference; path = "TheDuckWebcomics-Prefix.pch"; sourceTree = "<group>"; };
-		DB04215214621181000740DE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB04215114621181000740DE /* TheDuckWebcomics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheDuckWebcomics-Prefix.pch"; sourceTree = "<group>"; };
+		DB04215214621181000740DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB04215314621181000740DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DB04215514621181000740DE /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		DB04215514621181000740DE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DB04215614621181000740DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DB04215914621181000740DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		DB04216614621262000740DE /* avatar-generic-duck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-generic-duck.png"; sourceTree = "<group>"; };
+		DB04216714621262000740DE /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		DB04216814621262000740DE /* badge-quackcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge-quackcast.png"; sourceTree = "<group>"; };
+		DB04216914621262000740DE /* badge-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge-twitter.png"; sourceTree = "<group>"; };
+		DB04216A14621262000740DE /* bluesearchbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluesearchbutton.png; sourceTree = "<group>"; };
+		DB04216B14621262000740DE /* DD-temp-podcast-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DD-temp-podcast-badge.png"; sourceTree = "<group>"; };
+		DB04216C14621262000740DE /* drunk_duck_on_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drunk_duck_on_twitter.png; sourceTree = "<group>"; };
+		DB04216D14621262000740DE /* drunkduck_favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drunkduck_favicon.png; sourceTree = "<group>"; };
+		DB04216E14621262000740DE /* drunkducklogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drunkducklogo.png; sourceTree = "<group>"; };
+		DB04216F14621262000740DE /* egg-logo-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg-logo-small.png"; sourceTree = "<group>"; };
+		DB04217014621262000740DE /* egg-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg-logo.png"; sourceTree = "<group>"; };
+		DB04217114621262000740DE /* quackcast-logo-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quackcast-logo-sm.png"; sourceTree = "<group>"; };
+		DB04217214621262000740DE /* quackcast-pagebadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quackcast-pagebadge.png"; sourceTree = "<group>"; };
+		DB04217314621262000740DE /* quackcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quackcast.png; sourceTree = "<group>"; };
+		DB04217414621262000740DE /* rss-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rss-badge.png"; sourceTree = "<group>"; };
+		DB04217514621262000740DE /* theduck_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theduck_57x57.png; sourceTree = "<group>"; };
+		DB04217614621262000740DE /* twitter-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-badge.png"; sourceTree = "<group>"; };
+		DB73CA8B14624D3400FF339F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		DB73CA8C14624D3400FF339F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		DB9AABFF14621B7600EE84F1 /* ListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListController.h; sourceTree = "<group>"; };
+		DB9AAC0014621B7600EE84F1 /* ListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListController.m; sourceTree = "<group>"; };
+		DB9AAC0114621B7600EE84F1 /* ListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListController.xib; sourceTree = "<group>"; };
+		DB9AAC061462224C00EE84F1 /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
+		DB9AAC071462224C00EE84F1 /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
+		DB9AAC081462224C00EE84F1 /* DetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailController.xib; sourceTree = "<group>"; };
+		DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBJson.xcodeproj; path = ../../Library/SDKs/SBJson_3.1alpha3/SBJson.xcodeproj; sourceTree = "<group>"; };
+		DB9AAC481462292300EE84F1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DB9AAC4A1462296600EE84F1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DB9AAC4B1462296600EE84F1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DB9AAC4C1462296600EE84F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +133,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA825C7146229CF00AA6DBB /* libsbjson-ios.a in Frameworks */,
+				DB9AAC4D1462296600EE84F1 /* libz.dylib in Frameworks */,
+				DB9AAC4E1462296600EE84F1 /* MobileCoreServices.framework in Frameworks */,
+				DB9AAC4F1462296600EE84F1 /* SystemConfiguration.framework in Frameworks */,
+				DB9AAC491462292300EE84F1 /* CFNetwork.framework in Frameworks */,
 				DB04214414621181000740DE /* UIKit.framework in Frameworks */,
 				DB04214614621181000740DE /* Foundation.framework in Frameworks */,
 				DB04214814621181000740DE /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +150,7 @@
 		DB04213414621181000740DE = {
 			isa = PBXGroup;
 			children = (
+				DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */,
 				DB04214914621181000740DE /* TheDuckWebcomics */,
 				DB04214214621181000740DE /* Frameworks */,
 				DB04214014621181000740DE /* Products */,
@@ -67,6 +168,10 @@
 		DB04214214621181000740DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB9AAC4A1462296600EE84F1 /* libz.dylib */,
+				DB9AAC4B1462296600EE84F1 /* MobileCoreServices.framework */,
+				DB9AAC4C1462296600EE84F1 /* SystemConfiguration.framework */,
+				DB9AAC481462292300EE84F1 /* CFNetwork.framework */,
 				DB04214314621181000740DE /* UIKit.framework */,
 				DB04214514621181000740DE /* Foundation.framework */,
 				DB04214714621181000740DE /* CoreGraphics.framework */,
@@ -77,11 +182,11 @@
 		DB04214914621181000740DE /* TheDuckWebcomics */ = {
 			isa = PBXGroup;
 			children = (
+				DB9AAC0514621B8700EE84F1 /* Resources */,
+				DB04216514621211000740DE /* Images */,
+				DB042164146211FA000740DE /* Classes */,
 				DB04215214621181000740DE /* AppDelegate.h */,
 				DB04215314621181000740DE /* AppDelegate.m */,
-				DB04215514621181000740DE /* ViewController.h */,
-				DB04215614621181000740DE /* ViewController.m */,
-				DB04215814621181000740DE /* ViewController.xib */,
 				DB04214A14621181000740DE /* Supporting Files */,
 			);
 			path = TheDuckWebcomics;
@@ -98,6 +203,74 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DB042164146211FA000740DE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DB9AAC351462246300EE84F1 /* Reachability */,
+				DB9AABFF14621B7600EE84F1 /* ListController.h */,
+				DB9AAC0014621B7600EE84F1 /* ListController.m */,
+				DB9AAC061462224C00EE84F1 /* DetailController.h */,
+				DB9AAC071462224C00EE84F1 /* DetailController.m */,
+				DB04215514621181000740DE /* ViewController.h */,
+				DB04215614621181000740DE /* ViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		DB04216514621211000740DE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DB04216614621262000740DE /* avatar-generic-duck.png */,
+				DB04216714621262000740DE /* background.jpg */,
+				DB04216814621262000740DE /* badge-quackcast.png */,
+				DB04216914621262000740DE /* badge-twitter.png */,
+				DB04216A14621262000740DE /* bluesearchbutton.png */,
+				DB04216B14621262000740DE /* DD-temp-podcast-badge.png */,
+				DB04216C14621262000740DE /* drunk_duck_on_twitter.png */,
+				DB04216D14621262000740DE /* drunkduck_favicon.png */,
+				DB04216E14621262000740DE /* drunkducklogo.png */,
+				DB04216F14621262000740DE /* egg-logo-small.png */,
+				DB04217014621262000740DE /* egg-logo.png */,
+				DB04217114621262000740DE /* quackcast-logo-sm.png */,
+				DB04217214621262000740DE /* quackcast-pagebadge.png */,
+				DB04217314621262000740DE /* quackcast.png */,
+				DB04217414621262000740DE /* rss-badge.png */,
+				DB04217514621262000740DE /* theduck_57x57.png */,
+				DB04217614621262000740DE /* twitter-badge.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		DB9AAC0514621B8700EE84F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB9AAC081462224C00EE84F1 /* DetailController.xib */,
+				DB9AAC0114621B7600EE84F1 /* ListController.xib */,
+				DB04215814621181000740DE /* ViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DB9AAC351462246300EE84F1 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				DB73CA8B14624D3400FF339F /* Reachability.h */,
+				DB73CA8C14624D3400FF339F /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		DB9AAC3A1462249900EE84F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB9AAC411462249900EE84F1 /* SBJson.framework */,
+				DB9AAC431462249900EE84F1 /* SBJsonTests.octest */,
+				DB9AAC451462249900EE84F1 /* libsbjson-ios.a */,
+				DB9AAC471462249900EE84F1 /* sbjson-iosTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +285,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DBA825C6146229C200AA6DBB /* PBXTargetDependency */,
 			);
 			name = TheDuckWebcomics;
 			productName = TheDuckWebcomics;
@@ -137,12 +311,49 @@
 			mainGroup = DB04213414621181000740DE;
 			productRefGroup = DB04214014621181000740DE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DB9AAC3A1462249900EE84F1 /* Products */;
+					ProjectRef = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DB04213E14621181000740DE /* TheDuckWebcomics */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DB9AAC411462249900EE84F1 /* SBJson.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SBJson.framework;
+			remoteRef = DB9AAC401462249900EE84F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DB9AAC431462249900EE84F1 /* SBJsonTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SBJsonTests.octest;
+			remoteRef = DB9AAC421462249900EE84F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DB9AAC451462249900EE84F1 /* libsbjson-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsbjson-ios.a";
+			remoteRef = DB9AAC441462249900EE84F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DB9AAC471462249900EE84F1 /* sbjson-iosTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "sbjson-iosTests.octest";
+			remoteRef = DB9AAC461462249900EE84F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DB04213D14621181000740DE /* Resources */ = {
@@ -151,6 +362,25 @@
 			files = (
 				DB04214E14621181000740DE /* InfoPlist.strings in Resources */,
 				DB04215A14621181000740DE /* ViewController.xib in Resources */,
+				DB04217714621262000740DE /* avatar-generic-duck.png in Resources */,
+				DB04217814621262000740DE /* background.jpg in Resources */,
+				DB04217914621262000740DE /* badge-quackcast.png in Resources */,
+				DB04217A14621262000740DE /* badge-twitter.png in Resources */,
+				DB04217B14621262000740DE /* bluesearchbutton.png in Resources */,
+				DB04217C14621262000740DE /* DD-temp-podcast-badge.png in Resources */,
+				DB04217D14621262000740DE /* drunk_duck_on_twitter.png in Resources */,
+				DB04217E14621262000740DE /* drunkduck_favicon.png in Resources */,
+				DB04217F14621262000740DE /* drunkducklogo.png in Resources */,
+				DB04218014621262000740DE /* egg-logo-small.png in Resources */,
+				DB04218114621262000740DE /* egg-logo.png in Resources */,
+				DB04218214621262000740DE /* quackcast-logo-sm.png in Resources */,
+				DB04218314621262000740DE /* quackcast-pagebadge.png in Resources */,
+				DB04218414621262000740DE /* quackcast.png in Resources */,
+				DB04218514621262000740DE /* rss-badge.png in Resources */,
+				DB04218614621262000740DE /* theduck_57x57.png in Resources */,
+				DB04218714621262000740DE /* twitter-badge.png in Resources */,
+				DB9AAC0314621B7600EE84F1 /* ListController.xib in Resources */,
+				DB9AAC0A1462224C00EE84F1 /* DetailController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,10 +394,21 @@
 				DB04215014621181000740DE /* main.m in Sources */,
 				DB04215414621181000740DE /* AppDelegate.m in Sources */,
 				DB04215714621181000740DE /* ViewController.m in Sources */,
+				DB9AAC0214621B7600EE84F1 /* ListController.m in Sources */,
+				DB9AAC091462224C00EE84F1 /* DetailController.m in Sources */,
+				DB73CA8D14624D3400FF339F /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBA825C6146229C200AA6DBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "sbjson-ios";
+			targetProxy = DBA825C5146229C200AA6DBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DB04214C14621181000740DE /* InfoPlist.strings */ = {
@@ -275,6 +516,7 @@
 				DB04215F14621181000740DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

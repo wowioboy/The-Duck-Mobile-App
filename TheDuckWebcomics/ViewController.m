@@ -7,8 +7,58 @@
 //
 
 #import "ViewController.h"
+#import "ListController.h"
 
 @implementation ViewController
+
+@synthesize newsButton, featButton, quackButton;
+@synthesize listController;
+
+
+-(IBAction)getNews:(id)sender{
+    //[self alertWithMessage:@"Get News Here!" withTitle:@"The Duck"];
+    listController = [[ListController alloc] initWithNibName:@"ListController" bundle:nil];
+	[self.navigationController pushViewController:listController animated:YES];
+    [listController setTitle:@"Latest News"];
+    
+}
+
+-(IBAction)getFeatures:(id)sender{
+    //[self alertWithMessage:@"Get Featured Comics Here!" withTitle:@"The Duck"];
+    listController = [[ListController alloc] initWithNibName:@"ListController" bundle:nil];
+	[self.navigationController pushViewController:listController animated:YES];
+    [listController setTitle:@"Featured Comics"];
+}
+
+-(IBAction)getEpisodes:(id)sender{
+    //[self alertWithMessage:@"Get Quackcast Episodes Here!" withTitle:@"The Duck"];
+    listController = [[ListController alloc] initWithNibName:@"ListController" bundle:nil];
+	[self.navigationController pushViewController:listController animated:YES];
+    [listController setTitle:@"Quackcast Episodes"];
+}
+
+-(NSString*)fetchRemoteData:(NSString *)dataStr {
+    
+    
+    return @"";
+}
+
+#pragma mark -
+#pragma mark Alert Message Method
+
+- (void)alertWithMessage:(NSString *)msg withTitle:(NSString *)title 
+{
+	
+	if ([title length] == 0)
+		title = @"Error";
+	
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title 
+													message:msg
+												   delegate:nil 
+										  cancelButtonTitle:@"OK" 
+										  otherButtonTitles: nil];
+	[alert show];
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -34,6 +84,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:TRUE];
 }
 
 - (void)viewDidAppear:(BOOL)animated
