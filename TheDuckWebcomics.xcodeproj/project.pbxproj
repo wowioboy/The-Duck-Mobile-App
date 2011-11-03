@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB04214414621181000740DE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB04214314621181000740DE /* UIKit.framework */; };
+		DB04214614621181000740DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB04214514621181000740DE /* Foundation.framework */; };
+		DB04214814621181000740DE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB04214714621181000740DE /* CoreGraphics.framework */; };
+		DB04214E14621181000740DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB04214C14621181000740DE /* InfoPlist.strings */; };
+		DB04215014621181000740DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB04214F14621181000740DE /* main.m */; };
+		DB04215414621181000740DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB04215314621181000740DE /* AppDelegate.m */; };
+		DB04215714621181000740DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB04215614621181000740DE /* ViewController.m */; };
+		DB04215A14621181000740DE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB04215814621181000740DE /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB04213F14621181000740DE /* TheDuckWebcomics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheDuckWebcomics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB04214314621181000740DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DB04214514621181000740DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DB04214714621181000740DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DB04214B14621181000740DE /* TheDuckWebcomics-Info.plist */ = {isa = PBXFileReference; path = "TheDuckWebcomics-Info.plist"; sourceTree = "<group>"; };
+		DB04214D14621181000740DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB04214F14621181000740DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB04215114621181000740DE /* TheDuckWebcomics-Prefix.pch */ = {isa = PBXFileReference; path = "TheDuckWebcomics-Prefix.pch"; sourceTree = "<group>"; };
+		DB04215214621181000740DE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB04215314621181000740DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB04215514621181000740DE /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		DB04215614621181000740DE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB04215914621181000740DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB04213C14621181000740DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB04214414621181000740DE /* UIKit.framework in Frameworks */,
+				DB04214614621181000740DE /* Foundation.framework in Frameworks */,
+				DB04214814621181000740DE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB04213414621181000740DE = {
+			isa = PBXGroup;
+			children = (
+				DB04214914621181000740DE /* TheDuckWebcomics */,
+				DB04214214621181000740DE /* Frameworks */,
+				DB04214014621181000740DE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB04214014621181000740DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB04213F14621181000740DE /* TheDuckWebcomics.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB04214214621181000740DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB04214314621181000740DE /* UIKit.framework */,
+				DB04214514621181000740DE /* Foundation.framework */,
+				DB04214714621181000740DE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB04214914621181000740DE /* TheDuckWebcomics */ = {
+			isa = PBXGroup;
+			children = (
+				DB04215214621181000740DE /* AppDelegate.h */,
+				DB04215314621181000740DE /* AppDelegate.m */,
+				DB04215514621181000740DE /* ViewController.h */,
+				DB04215614621181000740DE /* ViewController.m */,
+				DB04215814621181000740DE /* ViewController.xib */,
+				DB04214A14621181000740DE /* Supporting Files */,
+			);
+			path = TheDuckWebcomics;
+			sourceTree = "<group>";
+		};
+		DB04214A14621181000740DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB04214B14621181000740DE /* TheDuckWebcomics-Info.plist */,
+				DB04214C14621181000740DE /* InfoPlist.strings */,
+				DB04214F14621181000740DE /* main.m */,
+				DB04215114621181000740DE /* TheDuckWebcomics-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB04213E14621181000740DE /* TheDuckWebcomics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB04215D14621181000740DE /* Build configuration list for PBXNativeTarget "TheDuckWebcomics" */;
+			buildPhases = (
+				DB04213B14621181000740DE /* Sources */,
+				DB04213C14621181000740DE /* Frameworks */,
+				DB04213D14621181000740DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TheDuckWebcomics;
+			productName = TheDuckWebcomics;
+			productReference = DB04213F14621181000740DE /* TheDuckWebcomics.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB04213614621181000740DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Alliance Acquisitions, Inc.";
+			};
+			buildConfigurationList = DB04213914621181000740DE /* Build configuration list for PBXProject "TheDuckWebcomics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB04213414621181000740DE;
+			productRefGroup = DB04214014621181000740DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB04213E14621181000740DE /* TheDuckWebcomics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB04213D14621181000740DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB04214E14621181000740DE /* InfoPlist.strings in Resources */,
+				DB04215A14621181000740DE /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB04213B14621181000740DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB04215014621181000740DE /* main.m in Sources */,
+				DB04215414621181000740DE /* AppDelegate.m in Sources */,
+				DB04215714621181000740DE /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DB04214C14621181000740DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB04214D14621181000740DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DB04215814621181000740DE /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB04215914621181000740DE /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB04215B14621181000740DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB04215C14621181000740DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB04215E14621181000740DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheDuckWebcomics/TheDuckWebcomics-Prefix.pch";
+				INFOPLIST_FILE = "TheDuckWebcomics/TheDuckWebcomics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DB04215F14621181000740DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TheDuckWebcomics/TheDuckWebcomics-Prefix.pch";
+				INFOPLIST_FILE = "TheDuckWebcomics/TheDuckWebcomics-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB04213914621181000740DE /* Build configuration list for PBXProject "TheDuckWebcomics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB04215B14621181000740DE /* Debug */,
+				DB04215C14621181000740DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB04215D14621181000740DE /* Build configuration list for PBXNativeTarget "TheDuckWebcomics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB04215E14621181000740DE /* Debug */,
+				DB04215F14621181000740DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB04213614621181000740DE /* Project object */;
+}
