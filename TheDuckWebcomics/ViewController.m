@@ -8,15 +8,33 @@
 
 #import "ViewController.h"
 #import "ListController.h"
+#import "SBJson.h"
 
 @implementation ViewController
 
 @synthesize newsButton, featButton, quackButton;
-@synthesize listController;
+@synthesize listController, appDelegate, receivedData;
 
 
 -(IBAction)getNews:(id)sender{
-    //[self alertWithMessage:@"Get News Here!" withTitle:@"The Duck"];
+    //[self.appDelegate alertWithMessage:@"Get News Here!" withTitle:@"The Duck"];
+    
+    // setup data request
+    NSURLRequest *theRequest=[NSURLRequest requestWithURL:[NSURL URLWithString:newsURL]
+                                              cachePolicy:NSURLRequestUseProtocolCachePolicy
+                                          timeoutInterval:60.0];
+    
+    // create the connection with the request
+    // and start loading the data
+    NSURLConnection *theConnection=[[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
+    if (theConnection) {
+        receivedData = [NSMutableData data];
+    } else {
+        // Inform the user that the connection failed.
+        [self.appDelegate alertWithMessage:@"Connection Failed" withTitle:@"Error!"];
+    }
+    
+    
     listController = [[ListController alloc] initWithNibName:@"ListController" bundle:nil];
 	[self.navigationController pushViewController:listController animated:YES];
     [listController setTitle:@"Latest News"];
@@ -24,14 +42,14 @@
 }
 
 -(IBAction)getFeatures:(id)sender{
-    //[self alertWithMessage:@"Get Featured Comics Here!" withTitle:@"The Duck"];
+    //[self.appDelegate alertWithMessage:@"Get Featured Comics Here!" withTitle:@"The Duck"];
     listController = [[ListController alloc] initWithNibName:@"ListController" bundle:nil];
 	[self.navigationController pushViewController:listController animated:YES];
     [listController setTitle:@"Featured Comics"];
 }
 
 -(IBAction)getEpisodes:(id)sender{
-    //[self alertWithMessage:@"Get Quackcast Episodes Here!" withTitle:@"The Duck"];
+    //[self.appDelegate alertWithMessage:@"Get Quackcast Episodes Here!" withTitle:@"The Duck"];
     listController = [[ListController alloc] initWithNibName:@"ListController" bundle:nil];
 	[self.navigationController pushViewController:listController animated:YES];
     [listController setTitle:@"Quackcast Episodes"];
@@ -44,21 +62,79 @@
 }
 
 #pragma mark -
-#pragma mark Alert Message Method
+#pragma mark NSURLConnection Delegate Methods
 
-- (void)alertWithMessage:(NSString *)msg withTitle:(NSString *)title 
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
-	
-	if ([title length] == 0)
-		title = @"Error";
-	
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title 
-													message:msg
-												   delegate:nil 
-										  cancelButtonTitle:@"OK" 
-										  otherButtonTitles: nil];
-	[alert show];
+    // This method is called when the server has determined that it
+    // has enough information to create the NSURLResponse.
+    
+    // It can be called multiple times, for example in the case of a
+    // redirect, so each time we reset the data.
+    
+    // receivedData is an instance variable declared elsewhere.
+    [receivedData setLength:0];
 }
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    // Append the new data to receivedData.
+    // receivedData is an instance variable declared elsewhere.
+    [receivedData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection
+  didFailWithError:(NSError *)error
+{
+    // release the connection, and the data object
+    //[connection release];
+    // receivedData is declared as a method instance elsewhere
+    //[receivedData release];
+    
+    // inform the user
+    NSLog(@"Connection failed! Error - %@ %@",
+          [error localizedDescription],
+          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    // do something with the data
+    // receivedData is declared as a method instance elsewhere
+    NSLog(@"Succeeded! Received %d bytes of data",[receivedData length]);
+    
+    NSString *responseString = [[NSString alloc] initWithData:receivedData encoding:NSUTF8StringEncoding];
+    
+    //responseString = [responseString stringByReplacingOccurrencesOfString:@"[" withString:@""];
+    //responseString = [responseString stringByReplacingOccurrencesOfString:@"]" withString:@""];
+        
+    //NSArray *newsArticles = [responseString JSONValue];
+	//SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+	//id jsonResponse = [jsonParser objectWithString:dataString  error:NULL];
+    
+    
+    NSError *error;
+	SBJsonParser *json = [[SBJsonParser alloc] init];
+	NSArray *newsArticles = [json objectWithString:responseString error:&error];
+    NSMutableString *textString = [NSMutableString stringWithString:@"Article Titles:\n"];
+    
+	if (newsArticles == nil) {
+        NSLog(@"JSON Parsing Failed: %@",[error localizedDescription]);
+        NSLog(@"%@",newsArticles);
+    } else {
+		for (int i = 0; i < [newsArticles count]; i++)
+			[textString appendFormat:@"%@\n", [newsArticles objectAtIndex:i]];
+	}
+    
+    
+    NSLog(@"%@",responseString);
+	//[jsonParser release];
+    
+    // release the connection, and the data object
+    //[connection release];
+    //[receivedData release];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -71,7 +147,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 }
 
 - (void)viewDidUnload

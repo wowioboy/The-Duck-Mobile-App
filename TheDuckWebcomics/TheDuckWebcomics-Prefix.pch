@@ -16,6 +16,9 @@
 
 // define some constants
 #define homeURL             @"http://www.theduckwebcomics.com"
-#define newsURL             @"http://www.theduckwebcomics.com/api/news"
+#define newsURL             @"http://www.theduckwebcomics.com/api/latestnews"
 #define featuredComicsURL   @"http://www.theduckwebcomics.com/api/featuredcomics"
 #define quackcastURL        @"http://www.theduckwebcomics.com/api/quackcast"
+
+// user profile plist
+#define userProfileFile				@"/duck_user.plist"

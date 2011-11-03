@@ -30,8 +30,21 @@
 		DB04218314621262000740DE /* quackcast-pagebadge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217214621262000740DE /* quackcast-pagebadge.png */; };
 		DB04218414621262000740DE /* quackcast.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217314621262000740DE /* quackcast.png */; };
 		DB04218514621262000740DE /* rss-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217414621262000740DE /* rss-badge.png */; };
-		DB04218614621262000740DE /* theduck_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217514621262000740DE /* theduck_57x57.png */; };
+		DB04218614621262000740DE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217514621262000740DE /* Icon.png */; };
 		DB04218714621262000740DE /* twitter-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB04217614621262000740DE /* twitter-badge.png */; };
+		DB167AFE1463112F0037DA52 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB167AFD1463112F0037DA52 /* CoreData.framework */; };
+		DB167B191463195D0037DA52 /* NSObject+SBJson.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B011463195D0037DA52 /* NSObject+SBJson.m */; };
+		DB167B1A1463195D0037DA52 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B041463195D0037DA52 /* SBJsonParser.m */; };
+		DB167B1B1463195D0037DA52 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B061463195D0037DA52 /* SBJsonStreamParser.m */; };
+		DB167B1C1463195D0037DA52 /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B081463195D0037DA52 /* SBJsonStreamParserAccumulator.m */; };
+		DB167B1D1463195D0037DA52 /* SBJsonStreamParserAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B0A1463195D0037DA52 /* SBJsonStreamParserAdapter.m */; };
+		DB167B1E1463195D0037DA52 /* SBJsonStreamParserState.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B0C1463195D0037DA52 /* SBJsonStreamParserState.m */; };
+		DB167B1F1463195D0037DA52 /* SBJsonStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B0E1463195D0037DA52 /* SBJsonStreamWriter.m */; };
+		DB167B201463195D0037DA52 /* SBJsonStreamWriterAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B101463195D0037DA52 /* SBJsonStreamWriterAccumulator.m */; };
+		DB167B211463195D0037DA52 /* SBJsonStreamWriterState.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B121463195D0037DA52 /* SBJsonStreamWriterState.m */; };
+		DB167B221463195D0037DA52 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B141463195D0037DA52 /* SBJsonTokeniser.m */; };
+		DB167B231463195D0037DA52 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B161463195D0037DA52 /* SBJsonUTF8Stream.m */; };
+		DB167B241463195D0037DA52 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB167B181463195D0037DA52 /* SBJsonWriter.m */; };
 		DB73CA8D14624D3400FF339F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = DB73CA8C14624D3400FF339F /* Reachability.m */; };
 		DB9AAC0214621B7600EE84F1 /* ListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9AAC0014621B7600EE84F1 /* ListController.m */; };
 		DB9AAC0314621B7600EE84F1 /* ListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9AAC0114621B7600EE84F1 /* ListController.xib */; };
@@ -41,46 +54,7 @@
 		DB9AAC4D1462296600EE84F1 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AAC4A1462296600EE84F1 /* libz.dylib */; };
 		DB9AAC4E1462296600EE84F1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AAC4B1462296600EE84F1 /* MobileCoreServices.framework */; };
 		DB9AAC4F1462296600EE84F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AAC4C1462296600EE84F1 /* SystemConfiguration.framework */; };
-		DBA825C7146229CF00AA6DBB /* libsbjson-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9AAC451462249900EE84F1 /* libsbjson-ios.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DB9AAC401462249900EE84F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC12323D1391D5CC00131607;
-			remoteInfo = SBJson;
-		};
-		DB9AAC421462249900EE84F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BC1232521391D5CC00131607;
-			remoteInfo = SBJsonTests;
-		};
-		DB9AAC441462249900EE84F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCC2626913920FC7003D9994;
-			remoteInfo = "sbjson-ios";
-		};
-		DB9AAC461462249900EE84F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BCC2627313920FC7003D9994;
-			remoteInfo = "sbjson-iosTests";
-		};
-		DBA825C5146229C200AA6DBB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BCC2626813920FC7003D9994;
-			remoteInfo = "sbjson-ios";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DB04213F14621181000740DE /* TheDuckWebcomics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheDuckWebcomics.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,8 +85,34 @@
 		DB04217214621262000740DE /* quackcast-pagebadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quackcast-pagebadge.png"; sourceTree = "<group>"; };
 		DB04217314621262000740DE /* quackcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quackcast.png; sourceTree = "<group>"; };
 		DB04217414621262000740DE /* rss-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rss-badge.png"; sourceTree = "<group>"; };
-		DB04217514621262000740DE /* theduck_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theduck_57x57.png; sourceTree = "<group>"; };
+		DB04217514621262000740DE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		DB04217614621262000740DE /* twitter-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-badge.png"; sourceTree = "<group>"; };
+		DB167AFD1463112F0037DA52 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DB167B001463195D0037DA52 /* NSObject+SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJson.h"; sourceTree = "<group>"; };
+		DB167B011463195D0037DA52 /* NSObject+SBJson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJson.m"; sourceTree = "<group>"; };
+		DB167B021463195D0037DA52 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
+		DB167B031463195D0037DA52 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		DB167B041463195D0037DA52 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		DB167B051463195D0037DA52 /* SBJsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParser.h; sourceTree = "<group>"; };
+		DB167B061463195D0037DA52 /* SBJsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParser.m; sourceTree = "<group>"; };
+		DB167B071463195D0037DA52 /* SBJsonStreamParserAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAccumulator.h; sourceTree = "<group>"; };
+		DB167B081463195D0037DA52 /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
+		DB167B091463195D0037DA52 /* SBJsonStreamParserAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserAdapter.h; sourceTree = "<group>"; };
+		DB167B0A1463195D0037DA52 /* SBJsonStreamParserAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAdapter.m; sourceTree = "<group>"; };
+		DB167B0B1463195D0037DA52 /* SBJsonStreamParserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamParserState.h; sourceTree = "<group>"; };
+		DB167B0C1463195D0037DA52 /* SBJsonStreamParserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserState.m; sourceTree = "<group>"; };
+		DB167B0D1463195D0037DA52 /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
+		DB167B0E1463195D0037DA52 /* SBJsonStreamWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriter.m; sourceTree = "<group>"; };
+		DB167B0F1463195D0037DA52 /* SBJsonStreamWriterAccumulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterAccumulator.h; sourceTree = "<group>"; };
+		DB167B101463195D0037DA52 /* SBJsonStreamWriterAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterAccumulator.m; sourceTree = "<group>"; };
+		DB167B111463195D0037DA52 /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
+		DB167B121463195D0037DA52 /* SBJsonStreamWriterState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamWriterState.m; sourceTree = "<group>"; };
+		DB167B131463195D0037DA52 /* SBJsonTokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonTokeniser.h; sourceTree = "<group>"; };
+		DB167B141463195D0037DA52 /* SBJsonTokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonTokeniser.m; sourceTree = "<group>"; };
+		DB167B151463195D0037DA52 /* SBJsonUTF8Stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonUTF8Stream.h; sourceTree = "<group>"; };
+		DB167B161463195D0037DA52 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
+		DB167B171463195D0037DA52 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		DB167B181463195D0037DA52 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		DB73CA8B14624D3400FF339F /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		DB73CA8C14624D3400FF339F /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		DB9AABFF14621B7600EE84F1 /* ListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListController.h; sourceTree = "<group>"; };
@@ -121,7 +121,6 @@
 		DB9AAC061462224C00EE84F1 /* DetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
 		DB9AAC071462224C00EE84F1 /* DetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
 		DB9AAC081462224C00EE84F1 /* DetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailController.xib; sourceTree = "<group>"; };
-		DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBJson.xcodeproj; path = ../../Library/SDKs/SBJson_3.1alpha3/SBJson.xcodeproj; sourceTree = "<group>"; };
 		DB9AAC481462292300EE84F1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DB9AAC4A1462296600EE84F1 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DB9AAC4B1462296600EE84F1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -133,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA825C7146229CF00AA6DBB /* libsbjson-ios.a in Frameworks */,
+				DB167AFE1463112F0037DA52 /* CoreData.framework in Frameworks */,
 				DB9AAC4D1462296600EE84F1 /* libz.dylib in Frameworks */,
 				DB9AAC4E1462296600EE84F1 /* MobileCoreServices.framework in Frameworks */,
 				DB9AAC4F1462296600EE84F1 /* SystemConfiguration.framework in Frameworks */,
@@ -150,7 +149,6 @@
 		DB04213414621181000740DE = {
 			isa = PBXGroup;
 			children = (
-				DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */,
 				DB04214914621181000740DE /* TheDuckWebcomics */,
 				DB04214214621181000740DE /* Frameworks */,
 				DB04214014621181000740DE /* Products */,
@@ -168,6 +166,7 @@
 		DB04214214621181000740DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB167AFD1463112F0037DA52 /* CoreData.framework */,
 				DB9AAC4A1462296600EE84F1 /* libz.dylib */,
 				DB9AAC4B1462296600EE84F1 /* MobileCoreServices.framework */,
 				DB9AAC4C1462296600EE84F1 /* SystemConfiguration.framework */,
@@ -206,6 +205,7 @@
 		DB042164146211FA000740DE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DB167AFF1463193C0037DA52 /* SBJson */,
 				DB9AAC351462246300EE84F1 /* Reachability */,
 				DB9AABFF14621B7600EE84F1 /* ListController.h */,
 				DB9AAC0014621B7600EE84F1 /* ListController.m */,
@@ -235,10 +235,42 @@
 				DB04217214621262000740DE /* quackcast-pagebadge.png */,
 				DB04217314621262000740DE /* quackcast.png */,
 				DB04217414621262000740DE /* rss-badge.png */,
-				DB04217514621262000740DE /* theduck_57x57.png */,
+				DB04217514621262000740DE /* Icon.png */,
 				DB04217614621262000740DE /* twitter-badge.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		DB167AFF1463193C0037DA52 /* SBJson */ = {
+			isa = PBXGroup;
+			children = (
+				DB167B001463195D0037DA52 /* NSObject+SBJson.h */,
+				DB167B011463195D0037DA52 /* NSObject+SBJson.m */,
+				DB167B021463195D0037DA52 /* SBJson.h */,
+				DB167B031463195D0037DA52 /* SBJsonParser.h */,
+				DB167B041463195D0037DA52 /* SBJsonParser.m */,
+				DB167B051463195D0037DA52 /* SBJsonStreamParser.h */,
+				DB167B061463195D0037DA52 /* SBJsonStreamParser.m */,
+				DB167B071463195D0037DA52 /* SBJsonStreamParserAccumulator.h */,
+				DB167B081463195D0037DA52 /* SBJsonStreamParserAccumulator.m */,
+				DB167B091463195D0037DA52 /* SBJsonStreamParserAdapter.h */,
+				DB167B0A1463195D0037DA52 /* SBJsonStreamParserAdapter.m */,
+				DB167B0B1463195D0037DA52 /* SBJsonStreamParserState.h */,
+				DB167B0C1463195D0037DA52 /* SBJsonStreamParserState.m */,
+				DB167B0D1463195D0037DA52 /* SBJsonStreamWriter.h */,
+				DB167B0E1463195D0037DA52 /* SBJsonStreamWriter.m */,
+				DB167B0F1463195D0037DA52 /* SBJsonStreamWriterAccumulator.h */,
+				DB167B101463195D0037DA52 /* SBJsonStreamWriterAccumulator.m */,
+				DB167B111463195D0037DA52 /* SBJsonStreamWriterState.h */,
+				DB167B121463195D0037DA52 /* SBJsonStreamWriterState.m */,
+				DB167B131463195D0037DA52 /* SBJsonTokeniser.h */,
+				DB167B141463195D0037DA52 /* SBJsonTokeniser.m */,
+				DB167B151463195D0037DA52 /* SBJsonUTF8Stream.h */,
+				DB167B161463195D0037DA52 /* SBJsonUTF8Stream.m */,
+				DB167B171463195D0037DA52 /* SBJsonWriter.h */,
+				DB167B181463195D0037DA52 /* SBJsonWriter.m */,
+			);
+			name = SBJson;
 			sourceTree = "<group>";
 		};
 		DB9AAC0514621B8700EE84F1 /* Resources */ = {
@@ -260,17 +292,6 @@
 			name = Reachability;
 			sourceTree = "<group>";
 		};
-		DB9AAC3A1462249900EE84F1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DB9AAC411462249900EE84F1 /* SBJson.framework */,
-				DB9AAC431462249900EE84F1 /* SBJsonTests.octest */,
-				DB9AAC451462249900EE84F1 /* libsbjson-ios.a */,
-				DB9AAC471462249900EE84F1 /* sbjson-iosTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -285,7 +306,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DBA825C6146229C200AA6DBB /* PBXTargetDependency */,
 			);
 			name = TheDuckWebcomics;
 			productName = TheDuckWebcomics;
@@ -311,49 +331,12 @@
 			mainGroup = DB04213414621181000740DE;
 			productRefGroup = DB04214014621181000740DE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = DB9AAC3A1462249900EE84F1 /* Products */;
-					ProjectRef = DB9AAC391462249900EE84F1 /* SBJson.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				DB04213E14621181000740DE /* TheDuckWebcomics */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		DB9AAC411462249900EE84F1 /* SBJson.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SBJson.framework;
-			remoteRef = DB9AAC401462249900EE84F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DB9AAC431462249900EE84F1 /* SBJsonTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SBJsonTests.octest;
-			remoteRef = DB9AAC421462249900EE84F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DB9AAC451462249900EE84F1 /* libsbjson-ios.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libsbjson-ios.a";
-			remoteRef = DB9AAC441462249900EE84F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DB9AAC471462249900EE84F1 /* sbjson-iosTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "sbjson-iosTests.octest";
-			remoteRef = DB9AAC461462249900EE84F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DB04213D14621181000740DE /* Resources */ = {
@@ -377,7 +360,7 @@
 				DB04218314621262000740DE /* quackcast-pagebadge.png in Resources */,
 				DB04218414621262000740DE /* quackcast.png in Resources */,
 				DB04218514621262000740DE /* rss-badge.png in Resources */,
-				DB04218614621262000740DE /* theduck_57x57.png in Resources */,
+				DB04218614621262000740DE /* Icon.png in Resources */,
 				DB04218714621262000740DE /* twitter-badge.png in Resources */,
 				DB9AAC0314621B7600EE84F1 /* ListController.xib in Resources */,
 				DB9AAC0A1462224C00EE84F1 /* DetailController.xib in Resources */,
@@ -397,18 +380,22 @@
 				DB9AAC0214621B7600EE84F1 /* ListController.m in Sources */,
 				DB9AAC091462224C00EE84F1 /* DetailController.m in Sources */,
 				DB73CA8D14624D3400FF339F /* Reachability.m in Sources */,
+				DB167B191463195D0037DA52 /* NSObject+SBJson.m in Sources */,
+				DB167B1A1463195D0037DA52 /* SBJsonParser.m in Sources */,
+				DB167B1B1463195D0037DA52 /* SBJsonStreamParser.m in Sources */,
+				DB167B1C1463195D0037DA52 /* SBJsonStreamParserAccumulator.m in Sources */,
+				DB167B1D1463195D0037DA52 /* SBJsonStreamParserAdapter.m in Sources */,
+				DB167B1E1463195D0037DA52 /* SBJsonStreamParserState.m in Sources */,
+				DB167B1F1463195D0037DA52 /* SBJsonStreamWriter.m in Sources */,
+				DB167B201463195D0037DA52 /* SBJsonStreamWriterAccumulator.m in Sources */,
+				DB167B211463195D0037DA52 /* SBJsonStreamWriterState.m in Sources */,
+				DB167B221463195D0037DA52 /* SBJsonTokeniser.m in Sources */,
+				DB167B231463195D0037DA52 /* SBJsonUTF8Stream.m in Sources */,
+				DB167B241463195D0037DA52 /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DBA825C6146229C200AA6DBB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "sbjson-ios";
-			targetProxy = DBA825C5146229C200AA6DBB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DB04214C14621181000740DE /* InfoPlist.strings */ = {

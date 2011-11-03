@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 #import "Reachability.h"
 
 //@class ASINetworkQueue;
@@ -15,6 +16,10 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     
     //ASINetworkQueue *networkQueue;
+    
+    NSManagedObjectModel *managedObjectModel;
+    NSManagedObjectContext *managedObjectContext;	    
+    NSPersistentStoreCoordinator *persistentStoreCoordinator;
     
     UINavigationController *navController;
     
@@ -28,6 +33,10 @@
 
 }
 
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
 @property NetworkStatus hostStatus;
 @property NetworkStatus internetStatus;
 @property NetworkStatus wifiStatus;
@@ -39,10 +48,16 @@
 @property (nonatomic, strong) UINavigationController *navController;
 
 // create a shared delegate
-+ (AppDelegate *)sharedAppDelegate;
++(AppDelegate *)sharedAppDelegate;
 
-// reachability method
-- (void)updateReachabilityStatus;
+-(NSString *)applicationDocumentsDirectory;
+-(NSString *)userProfilePath;
+
+-(void)alertWithMessage:(NSString *)msg withTitle:(NSString *)title;
+
+// reachability methods
+-(BOOL)internetCheck;
+-(void)updateReachabilityStatus;
 
 
 @end
