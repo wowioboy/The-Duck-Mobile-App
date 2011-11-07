@@ -21,6 +21,25 @@
 		DB0420C71461BA44000740DE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB0420AC1461BA44000740DE /* CoreData.framework */; };
 		DB0420CF1461BA44000740DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB0420CD1461BA44000740DE /* InfoPlist.strings */; };
 		DB0420D21461BA44000740DE /* TheDuckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0420D11461BA44000740DE /* TheDuckTests.m */; };
+		DB0420DF1461C11A000740DE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0420DD1461C11A000740DE /* RootViewController.m */; };
+		DB0420E01461C11A000740DE /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB0420DE1461C11A000740DE /* RootViewController.xib */; };
+		DB0420F31461C6C3000740DE /* avatar-generic-duck.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420E21461C6C3000740DE /* avatar-generic-duck.png */; };
+		DB0420F41461C6C3000740DE /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB0420E31461C6C3000740DE /* background.jpg */; };
+		DB0420F51461C6C3000740DE /* badge-quackcast.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420E41461C6C3000740DE /* badge-quackcast.png */; };
+		DB0420F61461C6C3000740DE /* badge-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420E51461C6C3000740DE /* badge-twitter.png */; };
+		DB0420F71461C6C3000740DE /* bluesearchbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420E61461C6C3000740DE /* bluesearchbutton.png */; };
+		DB0420F81461C6C3000740DE /* DD-temp-podcast-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420E71461C6C3000740DE /* DD-temp-podcast-badge.png */; };
+		DB0420F91461C6C3000740DE /* drunk_duck_on_twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420E81461C6C3000740DE /* drunk_duck_on_twitter.png */; };
+		DB0420FA1461C6C3000740DE /* drunkduck_favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420E91461C6C3000740DE /* drunkduck_favicon.png */; };
+		DB0420FB1461C6C3000740DE /* drunkducklogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420EA1461C6C3000740DE /* drunkducklogo.png */; };
+		DB0420FC1461C6C3000740DE /* egg-logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420EB1461C6C3000740DE /* egg-logo-small.png */; };
+		DB0420FD1461C6C3000740DE /* egg-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420EC1461C6C3000740DE /* egg-logo.png */; };
+		DB0420FE1461C6C3000740DE /* quackcast-logo-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420ED1461C6C3000740DE /* quackcast-logo-sm.png */; };
+		DB0420FF1461C6C3000740DE /* quackcast-pagebadge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420EE1461C6C3000740DE /* quackcast-pagebadge.png */; };
+		DB0421001461C6C3000740DE /* quackcast.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420EF1461C6C3000740DE /* quackcast.png */; };
+		DB0421011461C6C3000740DE /* rss-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420F01461C6C3000740DE /* rss-badge.png */; };
+		DB0421021461C6C3000740DE /* theduck_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420F11461C6C3000740DE /* theduck_57x57.png */; };
+		DB0421031461C6C3000740DE /* twitter-badge.png in Resources */ = {isa = PBXBuildFile; fileRef = DB0420F21461C6C3000740DE /* twitter-badge.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,19 +58,39 @@
 		DB0420A81461BA44000740DE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB0420AA1461BA44000740DE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DB0420AC1461BA44000740DE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DB0420B01461BA44000740DE /* TheDuck-Info.plist */ = {isa = PBXFileReference; path = "TheDuck-Info.plist"; sourceTree = "<group>"; };
+		DB0420B01461BA44000740DE /* TheDuck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheDuck-Info.plist"; sourceTree = "<group>"; };
 		DB0420B21461BA44000740DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DB0420B41461BA44000740DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DB0420B61461BA44000740DE /* TheDuck-Prefix.pch */ = {isa = PBXFileReference; path = "TheDuck-Prefix.pch"; sourceTree = "<group>"; };
-		DB0420B71461BA44000740DE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB0420B61461BA44000740DE /* TheDuck-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TheDuck-Prefix.pch"; sourceTree = "<group>"; };
+		DB0420B71461BA44000740DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB0420B81461BA44000740DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DB0420BB1461BA44000740DE /* TheDuck.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TheDuck.xcdatamodel; sourceTree = "<group>"; };
 		DB0420C21461BA44000740DE /* TheDuckTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheDuckTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0420C31461BA44000740DE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DB0420CC1461BA44000740DE /* TheDuckTests-Info.plist */ = {isa = PBXFileReference; path = "TheDuckTests-Info.plist"; sourceTree = "<group>"; };
+		DB0420CC1461BA44000740DE /* TheDuckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TheDuckTests-Info.plist"; sourceTree = "<group>"; };
 		DB0420CE1461BA44000740DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DB0420D01461BA44000740DE /* TheDuckTests.h */ = {isa = PBXFileReference; path = TheDuckTests.h; sourceTree = "<group>"; };
+		DB0420D01461BA44000740DE /* TheDuckTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TheDuckTests.h; sourceTree = "<group>"; };
 		DB0420D11461BA44000740DE /* TheDuckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheDuckTests.m; sourceTree = "<group>"; };
+		DB0420DC1461C11A000740DE /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		DB0420DD1461C11A000740DE /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		DB0420DE1461C11A000740DE /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		DB0420E21461C6C3000740DE /* avatar-generic-duck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-generic-duck.png"; sourceTree = "<group>"; };
+		DB0420E31461C6C3000740DE /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		DB0420E41461C6C3000740DE /* badge-quackcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge-quackcast.png"; sourceTree = "<group>"; };
+		DB0420E51461C6C3000740DE /* badge-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "badge-twitter.png"; sourceTree = "<group>"; };
+		DB0420E61461C6C3000740DE /* bluesearchbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluesearchbutton.png; sourceTree = "<group>"; };
+		DB0420E71461C6C3000740DE /* DD-temp-podcast-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DD-temp-podcast-badge.png"; sourceTree = "<group>"; };
+		DB0420E81461C6C3000740DE /* drunk_duck_on_twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drunk_duck_on_twitter.png; sourceTree = "<group>"; };
+		DB0420E91461C6C3000740DE /* drunkduck_favicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drunkduck_favicon.png; sourceTree = "<group>"; };
+		DB0420EA1461C6C3000740DE /* drunkducklogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drunkducklogo.png; sourceTree = "<group>"; };
+		DB0420EB1461C6C3000740DE /* egg-logo-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg-logo-small.png"; sourceTree = "<group>"; };
+		DB0420EC1461C6C3000740DE /* egg-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "egg-logo.png"; sourceTree = "<group>"; };
+		DB0420ED1461C6C3000740DE /* quackcast-logo-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quackcast-logo-sm.png"; sourceTree = "<group>"; };
+		DB0420EE1461C6C3000740DE /* quackcast-pagebadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quackcast-pagebadge.png"; sourceTree = "<group>"; };
+		DB0420EF1461C6C3000740DE /* quackcast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quackcast.png; sourceTree = "<group>"; };
+		DB0420F01461C6C3000740DE /* rss-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rss-badge.png"; sourceTree = "<group>"; };
+		DB0420F11461C6C3000740DE /* theduck_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = theduck_57x57.png; sourceTree = "<group>"; };
+		DB0420F21461C6C3000740DE /* twitter-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-badge.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +153,8 @@
 		DB0420AE1461BA44000740DE /* TheDuck */ = {
 			isa = PBXGroup;
 			children = (
+				DB0420E11461C696000740DE /* Images */,
+				DB0420DB1461C0A8000740DE /* Classes */,
 				DB0420B71461BA44000740DE /* AppDelegate.h */,
 				DB0420B81461BA44000740DE /* AppDelegate.m */,
 				DB0420BA1461BA44000740DE /* TheDuck.xcdatamodeld */,
@@ -150,6 +191,40 @@
 				DB0420CD1461BA44000740DE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB0420DB1461C0A8000740DE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DB0420DC1461C11A000740DE /* RootViewController.h */,
+				DB0420DD1461C11A000740DE /* RootViewController.m */,
+				DB0420DE1461C11A000740DE /* RootViewController.xib */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		DB0420E11461C696000740DE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DB0420E21461C6C3000740DE /* avatar-generic-duck.png */,
+				DB0420E31461C6C3000740DE /* background.jpg */,
+				DB0420E41461C6C3000740DE /* badge-quackcast.png */,
+				DB0420E51461C6C3000740DE /* badge-twitter.png */,
+				DB0420E61461C6C3000740DE /* bluesearchbutton.png */,
+				DB0420E71461C6C3000740DE /* DD-temp-podcast-badge.png */,
+				DB0420E81461C6C3000740DE /* drunk_duck_on_twitter.png */,
+				DB0420E91461C6C3000740DE /* drunkduck_favicon.png */,
+				DB0420EA1461C6C3000740DE /* drunkducklogo.png */,
+				DB0420EB1461C6C3000740DE /* egg-logo-small.png */,
+				DB0420EC1461C6C3000740DE /* egg-logo.png */,
+				DB0420ED1461C6C3000740DE /* quackcast-logo-sm.png */,
+				DB0420EE1461C6C3000740DE /* quackcast-pagebadge.png */,
+				DB0420EF1461C6C3000740DE /* quackcast.png */,
+				DB0420F01461C6C3000740DE /* rss-badge.png */,
+				DB0420F11461C6C3000740DE /* theduck_57x57.png */,
+				DB0420F21461C6C3000740DE /* twitter-badge.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +299,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB0420B31461BA44000740DE /* InfoPlist.strings in Resources */,
+				DB0420E01461C11A000740DE /* RootViewController.xib in Resources */,
+				DB0420F31461C6C3000740DE /* avatar-generic-duck.png in Resources */,
+				DB0420F41461C6C3000740DE /* background.jpg in Resources */,
+				DB0420F51461C6C3000740DE /* badge-quackcast.png in Resources */,
+				DB0420F61461C6C3000740DE /* badge-twitter.png in Resources */,
+				DB0420F71461C6C3000740DE /* bluesearchbutton.png in Resources */,
+				DB0420F81461C6C3000740DE /* DD-temp-podcast-badge.png in Resources */,
+				DB0420F91461C6C3000740DE /* drunk_duck_on_twitter.png in Resources */,
+				DB0420FA1461C6C3000740DE /* drunkduck_favicon.png in Resources */,
+				DB0420FB1461C6C3000740DE /* drunkducklogo.png in Resources */,
+				DB0420FC1461C6C3000740DE /* egg-logo-small.png in Resources */,
+				DB0420FD1461C6C3000740DE /* egg-logo.png in Resources */,
+				DB0420FE1461C6C3000740DE /* quackcast-logo-sm.png in Resources */,
+				DB0420FF1461C6C3000740DE /* quackcast-pagebadge.png in Resources */,
+				DB0421001461C6C3000740DE /* quackcast.png in Resources */,
+				DB0421011461C6C3000740DE /* rss-badge.png in Resources */,
+				DB0421021461C6C3000740DE /* theduck_57x57.png in Resources */,
+				DB0421031461C6C3000740DE /* twitter-badge.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +354,7 @@
 				DB0420B51461BA44000740DE /* main.m in Sources */,
 				DB0420B91461BA44000740DE /* AppDelegate.m in Sources */,
 				DB0420BC1461BA44000740DE /* TheDuck.xcdatamodeld in Sources */,
+				DB0420DF1461C11A000740DE /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
