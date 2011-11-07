@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'TheDuckWebcomics' target in the 'TheDuckWebcomics' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+// define some constants
+#define homeURL             @"http://www.theduckwebcomics.com"
+#define newsURL             @"http://www.theduckwebcomics.com/api/news"
+#define featuredComicsURL   @"http://www.theduckwebcomics.com/api/featuredcomics"
+#define quackcastURL        @"http://www.theduckwebcomics.com/api/quackcast"
